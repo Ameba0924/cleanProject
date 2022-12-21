@@ -4,7 +4,6 @@
   "description": "Gulp environment for running HTML themes by themefisher",
   "main": "gulpfile.js",
   "scripts": {
-    "dev": "gulp dev",
     "build": "gulp build"
   },
   "keywords": [
