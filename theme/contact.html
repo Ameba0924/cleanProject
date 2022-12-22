@@ -31,6 +31,8 @@ FACEBOOK: https://www.facebook.com/themefisher
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Themefisher Small Apps Template v1.0">
 
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e9e6db84b2db03945a14bff03b97a588"></script>
+
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
   
@@ -59,11 +61,16 @@ FACEBOOK: https://www.facebook.com/themefisher
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown @@home">
+        <li class="nav-item @@home">
+          <a class="nav-link" href="/index.html">HOME</a>
+        </li>
+        <li class="nav-item @@faq">
+          <a class="nav-link" href="FAQ.html">FAQ</a>
+        </li>
+        <!-- <li class="nav-item dropdown @@home">
           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Home
             <span><i class="ti-angle-down"></i></span>
           </a>
-          <!-- Dropdown list -->
           <ul class="dropdown-menu">
             <li><a class="dropdown-item @@home1" href="index.html">Homepage</a></li>
             <li><a class="dropdown-item" href="homepage-2.html">Homepage 2</a></li>
@@ -79,13 +86,19 @@ FACEBOOK: https://www.facebook.com/themefisher
               </ul>
             </li>
           </ul>
+        </li> -->
+        <li class="nav-item @@about">
+          <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="nav-item dropdown @@pages">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Pages
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+       <!-- <li class="nav-item dropdown @@pages">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">페이지테스트
             <span><i class="ti-angle-down"></i></span>
           </a>
-          <!-- Dropdown list -->
-          <ul class="dropdown-menu">
+
+           <ul class="dropdown-menu">
             <li><a class="dropdown-item @@team" href="team.html">Team</a></li>
             <li><a class="dropdown-item @@career" href="career.html">Career</a></li>
             <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li>
@@ -107,13 +120,7 @@ FACEBOOK: https://www.facebook.com/themefisher
               </ul>
             </li>
           </ul>
-        </li>
-        <li class="nav-item @@about">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
+        </li>  -->
       </ul>
     </div>
   </div>
@@ -130,7 +137,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 				<!-- Page Title -->
 				<h1>Contact Us</h1>
 				<!-- Page Description -->
-				<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta.</p>
+				<p>청소광 문의 관련 글귀 이러쿵저러쿵 저러쿵이러쿵 1234591823098101000</p>
 			</div>
 		</div>
 	</div>
@@ -152,8 +159,8 @@ FACEBOOK: https://www.facebook.com/themefisher
 							<i class="ti-mobile"></i>
 						</div>
 						<div class="details">
-							<h3>(00) 789 456 7890 (USA)</h3>
-							<h3>(88) 016 725 0455 (UK)</h3>
+							<h3>이용규 실장</h3>
+							<h3>010-3276-2714 (KR)</h3>
 						</div>
 					</div>
 					<div class="address-block text-center">
@@ -161,8 +168,9 @@ FACEBOOK: https://www.facebook.com/themefisher
 							<i class="ti-map-alt"></i>
 						</div>
 						<div class="details">
-							<h3>36. St Michael’s St, Oxford OX1, UK</h3>
-							<h3>123, Pennsylvania, USA</h3>
+							<h3>서울특별시 동대문구 천호대로</h3>
+							<h3>77다길 5-2 501호</h3>
+							
 						</div>
 					</div>
 				</div>
@@ -170,7 +178,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 			<div class="col-lg-7 mt-5 mt-lg-0">
 				<div class="google-map">
 					<!-- Google Map -->
-					<div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758"></div>
+					<div id="map_canvas" data-latitude="37.566252281284" data-longitude="127.0644804802"></div>
 				</div>
 			</div>
 		</div>
@@ -182,34 +190,12 @@ FACEBOOK: https://www.facebook.com/themefisher
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="mb-5 text-center">Drop us a mail</h2>
+				<!-- Submit Button -->
+				<div class="col-12 text-center">
+					<button class="btn btn-main-md">문의하기</button>
+				</div>
 			</div>
-			<div class="col-12">
-				<form action="">
-					<div class="row">
-						<!-- Name -->
-						<div class="col-md-6 mb-2">
-							<input class="form-control main" type="text" placeholder="Name" required>
-						</div>
-						<!-- Email -->
-						<div class="col-md-6 mb-2">
-							<input class="form-control main" type="email" placeholder="Your Email Address" required>
-						</div>
-						<!-- subject -->
-						<div class="col-md-12 mb-2">
-							<input class="form-control main" type="text" placeholder="Subject" required>
-						</div>
-						<!-- Message -->
-						<div class="col-md-12 mb-2">
-							<textarea class="form-control main" name="message" rows="10" placeholder="Your Message"></textarea>
-						</div>
-						<!-- Submit Button -->
-						<div class="col-12 text-right">
-							<button class="btn btn-main-md">Submit</button>
-						</div>
-					</div>
-				</form>
-			</div>
+			
 		</div>
 	</div>
 </section>
